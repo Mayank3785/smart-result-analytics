@@ -1,37 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Smart Result Analytics</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 <body>
+  <div class="container">
+    <h1>🎓 Smart Result Analytics</h1>
+    <p class="subtitle">Branch-wise Top 10 Students by CGPA</p>
 
-  <h1>Smart Result Analytics</h1>
+    <div class="card">
+      <select id="branch">
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="IT">IT</option>
+        <option value="Civil">Civil</option>
+        <option value="Mechanical">Mechanical</option>
+        <option value="Electrical">Electrical</option>
+        <option value="LT">LT</option>
+        <option value="BMR">BMR</option>
+      </select>
 
-  <select id="branch">
-    <option value="CSE">CSE</option>
-    <option value="ECE">ECE</option>
-    <option value="IT">IT</option>
-    <option value="Civil">Civil</option>
-    <option value="Mechanical">Mechanical</option>
-    <option value="Electrical">Electrical</option>
-    <option value="LT">LT</option>
-    <option value="BMR">BMR</option>
-  </select>
+      <button onclick="getTopper()">Get Top 10</button>
+    </div>
 
-  <button onclick="getTopper()">Get Top 10</button>
+    <div class="table-card">
+      <table id="result">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>CGPA</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
 
-  <table id="result">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Roll No</th>
-        <th>CGPA</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+    <footer>
+      Built by Mayank Kumar 🚀
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
-</html>

@@ -1,4 +1,4 @@
-const BACKEND_URL = "https://YOUR-BACKEND.onrender.com";
+const BACKEND_URL = "https://smart-result-analytics-2.onrender.com";
 
 function getTopper() {
   const branch = document.getElementById("branch").value;
